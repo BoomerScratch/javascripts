@@ -1,4 +1,5 @@
 var canvas = document.querySelector('canvas');
+var cursorlock
 class PointerLock {
 getInfo() {
     return {
