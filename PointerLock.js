@@ -4,7 +4,7 @@ class PointerLock {
 getInfo() {
     return {
         "id": "PointerLock",
-        "name": "Pointer lock (hide cursor)",
+        "name": "PointerLock",
         "blocks": [{
                     "opcode": "cursorlockon",
                     "blockType": "command",
@@ -32,7 +32,7 @@ getInfo() {
                     "arguments": {}
                 }],
         "menus": {}
-    };
+    },
 }
 cursorlockon({}) {
 var cursorlock = true
@@ -69,3 +69,4 @@ canvas.onclick = function() {
 document.exitPointerLock = document.exitPointerLock ||
                            document.mozExitPointerLock;
 }
+Scratch.extensions.register(new PointerLock());
