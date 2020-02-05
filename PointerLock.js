@@ -17,13 +17,15 @@ document.exitPointerLock();
 
 ext.pointerlockmovementX = function(){
 return function moveCallback(e) {
-  return e.movementX
+  var movementX = e.movementX
+  return movementX
 }
 };
 
 ext.pointerlockmovementY = function(){
 return function moveCallback(e) {
-  return e.movementY
+  var movementY = e.movementY
+  return movementY
 }
 };
 
@@ -44,5 +46,4 @@ return pointerlock
     ScratchExtensions.register('Pointer lock', descriptor, ext);
 x=document.createElement("canvas");document.getElementsByTagName("head")[0].appendChild(x)
 var canvas = document.querySelector('canvas')
-var pointerlock = false
 })({});
