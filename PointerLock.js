@@ -33,7 +33,6 @@ getInfo() {
                 }],
         "menus": {}
     },
-}
 cursorlockon({}) {
 var cursorlock = true
 }
