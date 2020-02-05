@@ -37,7 +37,7 @@ return pointerlock
         ]
     };
 
-    ScratchExtensions.register('Cursor lock (hide cursor) by Boomer001', descriptor, ext);
+    ScratchExtensions.register('Pointer lock', descriptor, ext);
 x=document.createElement("canvas");document.getElementsByTagName("head")[0].appendChild(x)
 var canvas = document.querySelector('canvas')
 var pointerlock = false
