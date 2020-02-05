@@ -32,7 +32,8 @@ getInfo() {
                     "arguments": {}
                 }],
         "menus": {}
-    },
+    };
+}
 cursorlockon({}) {
 var cursorlock = true
 }
