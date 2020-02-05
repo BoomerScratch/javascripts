@@ -69,4 +69,3 @@ canvas.onclick = function() {
 document.exitPointerLock = document.exitPointerLock ||
                            document.mozExitPointerLock;
 }
-Scratch.extensions.register(new PointerLock())
