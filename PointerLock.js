@@ -16,11 +16,15 @@ document.exitPointerLock();
 };
 
 ext.pointerlockmovementX = function(){
-return function xmove(e){return e.movementX}
+return function moveCallback(e) {
+  return e.movementX
+}
 };
 
 ext.pointerlockmovementY = function(){
-return function ymove(e){return e.movementY}
+return function moveCallback(e) {
+  return e.movementY
+}
 };
 
 ext.pointerlockison = function(){
