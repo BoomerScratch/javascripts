@@ -35,7 +35,6 @@ getInfo() {
 cursorlockon {
 var cursorlock = true
 }
-}
 cursorlockoff {
 var cursorlock = false
 }
