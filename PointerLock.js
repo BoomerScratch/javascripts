@@ -16,17 +16,31 @@ document.exitPointerLock();
 };
 
 ext.pointerlockmovementX = function(){
-return function moveCallback(e) {
-  var movementX = e.movementX
-  return movementX
+function moveCallback(e) {
+  var movementX = e.movementX ||
+      e.mozMovementX          ||
+      e.webkitMovementX       ||
+      0,
+  movementY = e.movementY ||
+      e.mozMovementY      ||
+      e.webkitMovementY   ||
+      0;
 }
+    return movementX
 };
 
 ext.pointerlockmovementY = function(){
 return function moveCallback(e) {
-  var movementY = e.movementY
-  return movementY
+  var movementX = e.movementX ||
+      e.mozMovementX          ||
+      e.webkitMovementX       ||
+      0,
+  movementY = e.movementY ||
+      e.mozMovementY      ||
+      e.webkitMovementY   ||
+      0;
 }
+    return movementY
 };
 
 ext.pointerlockison = function(){
