@@ -31,27 +31,27 @@ getInfo() {
                     "arguments": {}
                 }],
         "menus": {}
-cursorlockon() {
+cursorlockon({}) {
 var cursorlock = true
 }
-cursorlockoff() {
+cursorlockoff({}) {
 var cursorlock = false
 }
-cursorlockmovementx() {
+cursorlockmovementx({}) {
 function getMovement(e) {
 var mX = e.MovementX
 var mY = e.MovementY
 }
 return mX
 }
-cursorlockmovementy() {
+cursorlockmovementy({}) {
 function getMovement(e) {
 var mX = e.MovementX
 var mY = e.MovementY
 }
 return mY
 }
-cursorlockison() {
+cursorlockison({}) {
 return cursorlock
 }
 }
