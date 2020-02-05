@@ -69,4 +69,4 @@ canvas.onclick = function() {
 document.exitPointerLock = document.exitPointerLock ||
                            document.mozExitPointerLock;
 }
-ScratchExtensions.register('No Tether', descriptor, PointerLock);
+Scratch.extensions.register(new PointerLock());
