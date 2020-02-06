@@ -66,6 +66,15 @@ return false
     };
 
     ScratchExtensions.register('Pointer lock', descriptor, ext);
+       function changeCallback(e) {
+               if (document.pointerLockElement === canvas ||
+                document.mozPointerLockElement === canvas ||
+                document.webkitPointerLockElement === canvas) {
+            document.addEventListener("mousemove", updatePosY, false);
+        } else {
+            document.removeEventListener("mousemove", updatePosY, false);
+        }
+   }
     function setup() {document.addEventListener('pointerlockchange', changeCallback, false)}
     setup()
 x=document.createElement("canvas");document.getElementsByTagName("head")[0].appendChild(x)
