@@ -7,30 +7,32 @@
 
 ext.pointerlockon = function(){
 canvas.requestPointerLock();
-        document.addEventListener("mousemove", moveCallbackX, false);
-            document.addEventListener("mousemove", moveCallbackY, false);
 };
 
 ext.pointerlockoff = function(){
 document.exitPointerLock();
-            document.removeEventListener("mousemove", moveCallbackX, false);
-        document.removeEventListener("mousemove", moveCallbackY, false);
 };
 
 ext.pointerlockmovementX = function(){
-function moveCallbackX(e) {
-mx = e.movementX
+canvas.addEventListener("mousemove", e => {
+  const {
+    movementX,
+    movementY
+  } = e;
+    var mX = movementX
 }
-    moveCallbackX()
-    return mx
+                        return mX
 };
 
 ext.pointerlockmovementY = function(){
-function moveCallbackY(e) {
-  mx = e.movementY
+canvas.addEventListener("mousemove", e => {
+  const {
+    movementX,
+    movementY
+  } = e;
+    var mY = movementY
 }
-    moveCallbackY()
-    return movementY
+                        return mY
 };
 
     var descriptor = {
