@@ -6,54 +6,39 @@
     };
 
 ext.pointerlockon = function(){
-var pointerlock = true
 canvas.requestPointerLock();
+        document.addEventListener("mousemove", moveCallbackX, false);
+            document.addEventListener("mousemove", moveCallbackY, false);
 };
 
 ext.pointerlockoff = function(){
-var pointerlock = false
 document.exitPointerLock();
+            document.removeEventListener("mousemove", moveCallbackX, false);
+        document.removeEventListener("mousemove", moveCallbackY, false);
 };
 
 ext.pointerlockmovementX = function(){
-function moveCallback(e) {
-  var movementX = e.movementX ||
-      e.mozMovementX          ||
-      e.webkitMovementX       ||
-      0,
-  movementY = e.movementY ||
-      e.mozMovementY      ||
-      e.webkitMovementY   ||
-      0;
+function moveCallbackX(e) {
+mx = e.movementX
 }
-    return movementX
+    moveCallbackX()
+    return mx
 };
 
 ext.pointerlockmovementY = function(){
-return function moveCallback(e) {
-  var movementX = e.movementX ||
-      e.mozMovementX          ||
-      e.webkitMovementX       ||
-      0,
-  movementY = e.movementY ||
-      e.mozMovementY      ||
-      e.webkitMovementY   ||
-      0;
+function moveCallbackY(e) {
+  mx = e.movementY
 }
+    moveCallbackY()
     return movementY
-};
-
-ext.pointerlockison = function(){
-return pointerlock
 };
 
     var descriptor = {
         blocks: [
-[' ','turn pointer lock on','pointerlockon'],
-[' ','turn pointer lock off','pointerlockoff'],
+[' ','request pointer lock','pointerlockon'],
+[' ','exit pointer lock','pointerlockoff'],
 ['r','pointer lock movement X','pointerlockmovementX'],
 ['r','pointer lock movement Y','pointerlockmovementY'],
-['b','pointer lock is on?','pointerlockison'],
         ]
     };
 
