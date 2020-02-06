@@ -20,7 +20,7 @@ canvas.addEventListener("mousemove", e => {
     movementY
   } = e;
     var mX = movementX
-}
+})
                         return mX
 };
 
@@ -31,7 +31,7 @@ canvas.addEventListener("mousemove", e => {
     movementY
   } = e;
     var mY = movementY
-}
+})
                         return mY
 };
 
