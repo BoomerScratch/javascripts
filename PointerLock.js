@@ -46,4 +46,3 @@ function moveCallbackY(e) {
 x=document.createElement("canvas");document.getElementsByTagName("head")[0].appendChild(x)
 var canvas = document.querySelector('canvas')
 })({});
-
