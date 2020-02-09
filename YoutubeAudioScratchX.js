@@ -34,7 +34,8 @@ removeElement("youtube")
         blocks: [
 [' ','play audio from youtube video ID: %s start time: %n end time: %n','playaudiofromyoutube'],
 [' ','stop youtube audio','stopyoutubeaudio'],
-        ]
+        ],
+        url: 'https://boomerscratch.github.io/javascripts/youtubeaudioextensiondocumentation.mp4'
     };
  
     // Register the extension
