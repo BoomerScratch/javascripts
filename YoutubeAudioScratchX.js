@@ -14,7 +14,7 @@ ifrm.width = 0;
 ifrm.id = "youtube"
         ifrm.height = 0;
 ifrm.src="https://www.youtube.com/embed/"+ vid +"?start="+start+"&end="+end+";autoplay=true"
-        ifrm.frameborder="0"
+        ifrm.frameBorder="0"
         ifrm.allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         document.body.appendChild(ifrm);
     }
