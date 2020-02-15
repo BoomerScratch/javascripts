@@ -1,3 +1,4 @@
+if(parser.hostname === "scratch.mit.edu" && parser.pathname.startsWith("/projects/")) {
 setInterval(function(){var all = document.getElementsByClassName('gui_menu-bar-position_3U1T0 menu-bar_menu-bar_JcuHF box_box_2jjDp');
 for (var i = 0; i < all.length; i++) {
   all[i].style.backgroundColor = '#000000';
@@ -13,3 +14,4 @@ document.getElementsByClassName('stage-selector_header_2GVr1')[0].style.backgrou
 if (document.getElementsByClassName('paint-editor_editor-container_1WLch')[0] == undefined == false) {document.getElementsByClassName('paint-editor_editor-container_1WLch')[0].style.backgroundColor = '#000000'}
 if (document.getElementsByClassName('sound-editor_editor-container_iUSW-')[0] == undefined == false) {document.getElementsByClassName('sound-editor_editor-container_iUSW-')[0].style.backgroundColor = '#000000'}
 document.getElementsByClassName('blocklyMainBackground')[0].parentNode.removeChild(document.getElementsByClassName('blocklyMainBackground')[0]);},1)
+} else {alert('Please click the bookmark on the scratch project editor')}
