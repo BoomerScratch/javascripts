@@ -11,4 +11,4 @@ document.getElementsByClassName('scratchCategoryMenuItem scratchCategoryId-motio
 document.getElementsByClassName('stage-selector_stage-selector_3oWOr box_box_2jjDp')[0].style.backgroundColor = '#505050'
 document.getElementsByClassName('stage-selector_header_2GVr1')[0].style.backgroundColor = '#505050'
 document.getElementsByClassName('paint-editor_editor-container_1WLch')[0].style.backgroundColor = '#000000'
-document.getElementsByClassName('sound-editor_editor-container_iUSW-')[0].style.backgroundColor = '#000000'})
+document.getElementsByClassName('sound-editor_editor-container_iUSW-')[0].style.backgroundColor = '#000000'},1)
