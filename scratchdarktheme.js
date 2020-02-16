@@ -14,6 +14,5 @@ document.getElementsByClassName('scratchCategoryMenuItem scratchCategoryId-motio
 document.getElementsByClassName('stage-selector_stage-selector_3oWOr box_box_2jjDp')[0].style.backgroundColor = '#505050'
 document.getElementsByClassName('stage-selector_header_2GVr1')[0].style.backgroundColor = '#505050'
 if (document.getElementsByClassName('paint-editor_editor-container_1WLch')[0] == undefined == false) {document.getElementsByClassName('paint-editor_editor-container_1WLch')[0].style.backgroundColor = '#000000'}
-if (document.getElementsByClassName('sound-editor_editor-container_iUSW-')[0] == undefined == false) {document.getElementsByClassName('sound-editor_editor-container_iUSW-')[0].style.backgroundColor = '#000000'}
-document.getElementsByClassName('blocklyMainBackground')[0].parentNode.removeChild(document.getElementsByClassName('blocklyMainBackground')[0]);},1)
+if (document.getElementsByClassName('sound-editor_editor-container_iUSW-')[0] == undefined == false) {document.getElementsByClassName('sound-editor_editor-container_iUSW-')[0].style.backgroundColor = '#000000'}},1)
 } else {alert('Please click the bookmark on the scratch project editor')}
