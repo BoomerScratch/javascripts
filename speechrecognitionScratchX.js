@@ -44,7 +44,7 @@ var isonspeechrecognition = false
 var recognition = new webkitSpeechRecognition();
 recognition.onresult = function(e) {
 document.getElementById('recognitiontext').innerText = e.results[0][0].transcript;
-recognition.stop()
+recognition.stop();
 var isonspeechrecognition = false
 };
 })({});
