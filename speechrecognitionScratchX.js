@@ -23,7 +23,7 @@ return document.getElementById('recognitiontext').innerText
 }
     
 ext.onspeechrecognition = function(){
-return isonspeechrecognition
+if (isonspeechrecognition) {return true} else {return false}
 }
     // Block and block menu descriptions
     var descriptor = {
