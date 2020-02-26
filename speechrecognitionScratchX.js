@@ -30,7 +30,8 @@ return document.getElementById('recognitiontext').innerText
 }
     
 ext.onspeechrecognition = function(){
-return document.getElementById('isonspeechrecognition').innerText
+if (document.getElementById('isonspeechrecognition').innerText == "false") {var ison = false} else {var ison = true}
+return ison
 }
     // Block and block menu descriptions
     var descriptor = {
