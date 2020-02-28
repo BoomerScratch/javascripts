@@ -35,6 +35,7 @@ elem = document.createElement('audio')
 elem.src = recordings[recordingid - 1]
 elem.id = "playaudio"
 elem.setAttribute("class","recordingaudio")
+elem.playbackRate = setplaybackrate
 document.getElementsByTagName('body')[0].appendChild(elem)
 document.getElementById('playaudio').play()
 document.getElementById('playaudio').removeAttribute('id')
@@ -76,6 +77,4 @@ setplaybackrate = 1
     // Register the extension
     ScratchExtensions.register('Recording', descriptor, ext);
     setplaybackrate = 1
-    var paras = document.getElementsByClassName('recordingaudio');
-setInterval(function(){while(paras[0]){paras[0].playbackRate = setplaybackrate}},20)
 })({});
