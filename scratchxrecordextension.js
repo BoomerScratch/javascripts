@@ -77,5 +77,5 @@ setplaybackrate = 1
     ScratchExtensions.register('Recording', descriptor, ext);
     setplaybackrate = 1
     var paras = document.getElementsByClassName('recordingaudio');
-setInterval(function(){while(paras[0]){paras[0].playbackRate = setplaybackrate}})
+setInterval(function(){while(paras[0]){paras[0].playbackRate = setplaybackrate}},20)
 })({});
