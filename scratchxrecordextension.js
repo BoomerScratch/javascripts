@@ -35,6 +35,7 @@ elem = document.createElement('audio')
 elem.src = recordings[recordingid - 1]
 elem.id = "playaudio"
 elem.setAttribute("class","recordingaudio")
+elem.playbackRate = setplaybackrate
 document.getElementsByTagName('body')[0].appendChild(elem)
 document.getElementById('playaudio').play()
 document.getElementById('playaudio').removeAttribute('id')
@@ -51,11 +52,16 @@ ext.totalrecorded = function() {
 return recordings.length
 }
 
+ext.playbackspeed = function(input) {
+setplaybackrate = input
+}
+
 ext._stop = function() {
 var paras = document.getElementsByClassName('recordingaudio');
 while(paras[0]) {
 paras[0].parentNode.removeChild(paras[0]);
 }
+setplaybackrate = 1
 }
     // Block and block menu descriptions
     var descriptor = {
@@ -65,8 +71,10 @@ paras[0].parentNode.removeChild(paras[0]);
 [" ","play %n of recorded sounds","playrecord"],
 [" ","stop recordings","stopplayrecord"],
 ["r","total sounds recorded","totalrecorded"],
+[" ","set playback speed to %n X","playbackspeed"],
         ],
     };
     // Register the extension
     ScratchExtensions.register('Recording', descriptor, ext);
+    setplaybackrate = 1
 })({});
