@@ -51,11 +51,16 @@ ext.totalrecorded = function() {
 return recordings.length
 }
 
+ext.playbackspeed = function(input) {
+setplaybackrate = input
+}
+
 ext._stop = function() {
 var paras = document.getElementsByClassName('recordingaudio');
 while(paras[0]) {
 paras[0].parentNode.removeChild(paras[0]);
 }
+setplaybackrate = 1
 }
     // Block and block menu descriptions
     var descriptor = {
@@ -65,8 +70,12 @@ paras[0].parentNode.removeChild(paras[0]);
 [" ","play %n of recorded sounds","playrecord"],
 [" ","stop recordings","stopplayrecord"],
 ["r","total sounds recorded","totalrecorded"],
+[" ","set playback speed to %n X","playbackspeed"],
         ],
     };
     // Register the extension
     ScratchExtensions.register('Recording', descriptor, ext);
+    setplaybackrate = 1
+    var paras = document.getElementsByClassName('recordingaudio');
+setInterval(function(){while(paras[0]){paras[0].playbackRate = setplaybackrate}})
 })({});
