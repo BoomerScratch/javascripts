@@ -62,6 +62,7 @@ while(paras[0]) {
 paras[0].parentNode.removeChild(paras[0]);
 }
 setplaybackrate = 1
+recordings = []
 }
     // Block and block menu descriptions
     var descriptor = {
