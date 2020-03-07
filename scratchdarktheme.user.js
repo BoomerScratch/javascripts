@@ -4,7 +4,10 @@
 // @version      0.1
 // @description  Turns a lot of things in the scratch editor black by pressing ALT+Q
 // @author       BoomerScratch
-// @match        *://scratch.mit.edu/projects/*
+// @include        *://scratch.mit.edu/projects/*
+// @include        *://scratch.mit.edu/projects/*/editor
+// @include        *://scratch.mit.edu/projects/*/editor/*
+// @include        *://scratch.mit.edu/projects/
 // @grant        none
 // ==/UserScript==
 
