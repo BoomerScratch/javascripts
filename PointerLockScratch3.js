@@ -46,14 +46,14 @@ class PointerLock {
         {
           opcode: 'pointermovementY',
           blockType: Scratch.BlockType.REPORTER,
-          text: 'Pointer lock movement Y'
+          text: 'Pointer lock movement Y',
         },
         {
           opcode: 'pointerlockIsOn',
           blockType: Scratch.BlockType.BOOLEAN,
-          text: 'Pointer lock is on?'
-        }
-      ]
+          text: 'Pointer lock is on?',
+        },
+      ],
     }
   }
 
