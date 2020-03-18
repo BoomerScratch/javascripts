@@ -85,4 +85,4 @@ return false
         }
   }
 
-Scratch.extensions.register(PointerLock());
+Scratch.extensions.register(new PointerLock());
