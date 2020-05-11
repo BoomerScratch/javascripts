@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         YouTube video downloader
-// @namespace    none
+// @namespace    boomerscratch.github.io
 // @version      0.1
 // @description  Downloads YouTube videos by clicking a button below the video
-// @author       You
+// @author       BoomerScratch
 // @match        *://www.youtube.com/watch*
 // @grant        none
 // ==/UserScript==
